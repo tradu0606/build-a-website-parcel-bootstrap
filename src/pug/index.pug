@@ -7,6 +7,10 @@ html(lang="en")
         title GIPHY | Search All the GIFs | Make Your Own Animated GIF
         link(rel="stylesheet", href="../scss/style.scss") 
         script(src="../js/main.js", defer)
+        script(src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous")
+        script(src="../../node_modules/bootstrap/js/dist/carousel.js")
     body
 
         div.container
@@ -65,10 +69,10 @@ html(lang="en")
                 div.col-4
                     p See all
                 div.col-12
-                    div#carouselExampleControls.carousel.slide (data-ride="carousel")
+                    div#carouselExampleControls.carousel.slide(data-ride="carousel")
                         div.carousel-inner
                             each val in imgSrc
-                                div.carousel-item.active
+                                div.carousel-item
                                     img(src=val class="d-block w-100" alt="...")
 
                         a.carousel-control-prev(href="#carouselExampleControls" role="button" data-slide="prev")
@@ -83,7 +87,8 @@ html(lang="en")
                 div.col-12
                     | Latest stories
                 div.col-6
-                    | Latest stories 1
+                    .story
+                        p You've Heard of FOMO. How About JOMO?
                 div.col-3
                     | Latest stories 2
                 div.col-3

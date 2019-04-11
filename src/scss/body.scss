@@ -6,7 +6,8 @@ body {
     
 }
 img {
-    object-fit: cover;
+    height: 100px;
+    width: auto;
 }
 a
 {
@@ -30,4 +31,11 @@ a
     display: inline;
     text-align: right;
     vertical-align: bottom;
+}
+
+.story{
+    background-image: url(../imgContent/giphy.webp);
+    background-size: contain;
+    height: 300px;
+
 }

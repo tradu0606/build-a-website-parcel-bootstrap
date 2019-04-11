@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title GIPHY | Search All the GIFs | Make Your Own Animated GIF
+        link(rel="stylesheet", href="../scss/style.scss") 
+        script(src="../js/main.js", defer)
+    body
+
+        div.container
+            div.row
+                div.col-2
+                    img.logoImg(src='../imgLogo/logo.jpeg')
+                    
+                div.col-6 
+                    ul.nav.justify-content-center
+                        li.nav-item
+                            a.nav-link.active(href="#")
+                                | Reactions
+                        li.nav-item
+                            a.nav-link.active(href="#")
+                                | Entertainment
+                        li.nav-item
+                            a.nav-link.active(href="#")
+                                | Sports
+                        li.nav-item
+                            a.nav-link.active(href="#")
+                                | Stickers
+                        li.nav-item
+                            a.nav-link.active(href="#")
+                                | Artists
+                        li.nav-item
+                            a.nav-link.active(href="#")
+                                | ...
+
+                
+                div.col-2
+                    ul.nav.nav-pills.nav-fill
+                        li.nav-item
+                            a.nav-link.active(href="#") 
+                                |Upload
+                        li.nav-item
+                            a.nav-link.active(href="#") 
+                                |Create
+                div.col-2
+                    div.btn-group(role="group" aria-label="Basic example")
+                        button.btn.btn-secondary(type="button") pic
+                        button.btn.btn-secondary(type="button") Login
+                                
+
+                div.col-12
+                    div.input-group.mb-3
+                        input(type="text" class="form-control" placeholder="Seach" aria-label="Seach" aria-describedby="button-addon2")
+                        div.input-group-append
+                            button.btn.btn-outline-secondary(type="button" id="button-addon2") Search
+
+                div.col-12
+                    img(src="https://media.giphy.com/headers/2019-03-29-29-1553884190/homepage-banner.gif")
+                div.col-4
+                    p TRENDING GIFS
+                div.col-4
+                    
+                div.col-4
+                    p See all
+                div.col-12
+                    div#carouselExampleControls.carousel.slide (data-ride="carousel")
+                        div.carousel-inner
+                            each val in imgSrc
+                                div.carousel-item.active
+                                    img(src=val class="d-block w-100" alt="...")
+
+                        a.carousel-control-prev(href="#carouselExampleControls" role="button" data-slide="prev")
+                            span.carousel-control-prev-icon(aria-hidden="true")
+                            span.sr-only Previous
+                        a.carousel-control-next(href="#carouselExampleControls" role="button" data-slide="next")
+                            span.carousel-control-next-icon(aria-hidden="true")
+                            span.sr-only Next
+                  
+                div.col-12
+                    | Today April 12
+                div.col-12
+                    | Latest stories
+                div.col-6
+                    | Latest stories 1
+                div.col-3
+                    | Latest stories 2
+                div.col-3
+                    | Latest stories 3
+                div.col-6
+                    | Latest stories 2.1
+                div.col-3
+                    | Latest stories 2.2
+                div.col-3
+                    | Latest stories 2.3
+                div.col-3
+                    | Latest stories 3.1
+                div.col-3
+                    | Latest stories 3.2
+                div.col-3
+                    | Latest stories 3.3
+                div.col-3
+                    | Latest stories 3.4

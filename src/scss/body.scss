@@ -1,0 +1,33 @@
+body {
+    background-color:#131110;
+    color: white;
+    width: 1040px;
+    margin: 0 auto;
+    
+}
+img {
+    object-fit: cover;
+}
+a
+{
+    font-family: interface, Helvetica Neue, helvetica, sans-serif;
+}
+
+.logoImg{
+    height: 30px;
+    width: auto;
+}
+
+.nav-pills .active, .nav-link .active, .btn {
+    border-radius: 0;
+}
+.justify-content-center, .nav-pills, .nav-fill{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.btn-group{
+    display: inline;
+    text-align: right;
+    vertical-align: bottom;
+}

@@ -10,9 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "parcel-bundler": "^1.12.3"
   },
   "devDependencies": {
-    "pug": "^2.0.3"
+    "pug": "^2.0.3",
+    "sass": "^1.18.0"
   }
 }

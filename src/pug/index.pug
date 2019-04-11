@@ -7,10 +7,9 @@ html(lang="en")
         title GIPHY | Search All the GIFs | Make Your Own Animated GIF
         link(rel="stylesheet", href="../scss/style.scss") 
         script(src="../js/main.js", defer)
-        script(src="https://code.jquery.com/jquery-2.2.4.js"
-  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-  crossorigin="anonymous")
         script(src="../../node_modules/bootstrap/js/dist/carousel.js")
+        link(href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet")
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous")
     body
 
         div.container
@@ -42,32 +41,35 @@ html(lang="en")
                 
                 div.col-2
                     ul.nav.nav-pills.nav-fill
-                        li.nav-item
+                        li.nav-item.uploadCreate
                             a.nav-link.active(href="#") 
                                 |Upload
-                        li.nav-item
+                        li.nav-item.uploadCreate
                             a.nav-link.active(href="#") 
                                 |Create
                 div.col-2
                     div.btn-group(role="group" aria-label="Basic example")
-                        button.btn.btn-secondary(type="button") pic
-                        button.btn.btn-secondary(type="button") Login
+                        button.btn.btn-secondary.pic(type="button") 
+                            i(class="fas fa-user-alt")
+                        button.btn.btn-secondary.loginButton(type="button") LogIn
                                 
 
-                div.col-12
+                div.col-12.search
                     div.input-group.mb-3
                         input(type="text" class="form-control" placeholder="Seach" aria-label="Seach" aria-describedby="button-addon2")
                         div.input-group-append
-                            button.btn.btn-outline-secondary(type="button" id="button-addon2") Search
+                            button.btn.btn-outline-secondary.seachButton(type="button" id="button-addon2") 
+                                i(class="fas fa-search searchIcon")
+                                
 
                 div.col-12
-                    img(src="https://media.giphy.com/headers/2019-03-29-29-1553884190/homepage-banner.gif")
+                    img.instagram(src="https://media.giphy.com/headers/2019-03-29-29-1553884190/homepage-banner.gif")
                 div.col-4
                     p TRENDING GIFS
                 div.col-4
-                    
+                    p.todaysDay
                 div.col-4
-                    p See all
+                    p.seeAllLink See all
                 div.col-12
                     div#carouselExampleControls.carousel.slide(data-ride="carousel")
                         div.carousel-inner
@@ -80,30 +82,27 @@ html(lang="en")
                             span.sr-only Previous
                         a.carousel-control-next(href="#carouselExampleControls" role="button" data-slide="next")
                             span.carousel-control-next-icon(aria-hidden="true")
-                            span.sr-only Next
+                            span.sr-only Next 
                   
                 div.col-12
-                    | Today April 12
+                    p.todayDay
                 div.col-12
                     | Latest stories
-                div.col-6
-                    .story
-                        p You've Heard of FOMO. How About JOMO?
-                div.col-3
-                    | Latest stories 2
-                div.col-3
-                    | Latest stories 3
-                div.col-6
-                    | Latest stories 2.1
-                div.col-3
-                    | Latest stories 2.2
-                div.col-3
-                    | Latest stories 2.3
-                div.col-3
-                    | Latest stories 3.1
-                div.col-3
-                    | Latest stories 3.2
-                div.col-3
-                    | Latest stories 3.3
-                div.col-3
-                    | Latest stories 3.4
+                div.col-6.storyContainer
+                    .story1.story
+                        p.storyName You've Heard of FOMO. How About JOMO?
+                div.col-3.storyContainer
+                    .story2.story
+                        p.storyName Someone Great
+                div.col-3.storyContainer
+                    .story3.story
+                        p.storyName (Girl) Crush
+                div.col-3.storyContainer
+                    .story4.story
+                        p.storyName ICYMI: All of the Dirk and D-Wade Retirement GIFs!
+                div.col-3.storyContainer
+                    .story5.story
+                        p.storyName The Perfect Date
+                div.col-6.storyContainer
+                    .story6.story
+                        p.storyName Pretty Little Liars: The Perfectionists GIPHY Stickers
